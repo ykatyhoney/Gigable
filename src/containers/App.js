@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar from "../components/Navbar/Navbar";
+import Navbar from "../components/Navbar/Topbar";
 import { Router } from "react-router-dom";
 import history from "../routes/History";
 import Routes from "../routes/Routes";
@@ -17,8 +17,8 @@ class App extends React.Component {
     return (
       <IntlProvider locale={lang} messages={messages[lang]}>
         <div
-          className={lang === "ar" ? "rtl" : "ltr"}
-          dir={lang === "ar" ? "rtl" : "ltr"}
+          className={"ltr"}
+          dir={"ltr"}
         >
           {loading ? <Loader /> : null}
           <Router history={history}>

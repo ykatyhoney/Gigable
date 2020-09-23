@@ -1,11 +1,15 @@
-import * as types from "../types/Feature1Types";
+import * as types from "../types/GigsType";
 
-const INITIAL_STATE = {};
+const INITIAL_STATE = {
+  items: [],
+  numberOfPages: 1,
+  page: 1,
+  resultsPerPage: 1
+};
 
-// Replace with you own reducer
 export default (state = INITIAL_STATE, action) => {
   switch (action.type) {
-    case types.GET_DATA_RECEIVE:
+    case types.GET_GIGS_LIST_RECEIVE:
       return {
         ...state,
         ...action.payload
