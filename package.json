@@ -12,7 +12,7 @@
     "axios": "^0.19.2",
     "bootstrap": "^4.4.1",
     "jss-rtl": "^0.3.0",
-    "node-sass": "^4.14.1",
+    "node-sass": "^7.0.1",
     "react": "^16.13.1",
     "react-bootstrap": "^1.0.0",
     "react-bulma-components": "3.4.0",
